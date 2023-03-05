@@ -1,0 +1,61 @@
+.nav {
+  padding: 16px 0px;
+  &--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+  }
+  &__burger {
+    position: relative;
+    width: 40px;
+    height: 28px;
+    cursor: pointer;
+    &--line {
+      position: absolute;
+      left: 0;
+      height: 4px;
+      background-color: neutral(); // neutral("white");
+      transition: width 0.32s ease-in-out;
+      &.top {
+        top: 0;
+        width: 32px;
+      }
+      &.middle {
+        top: 12px;
+        width: 40px;
+      }
+      &.bottom {
+        bottom: 0;
+        width: 24px;
+      }
+    }
+    // TODO
+    // 1. hover effect
+    // 2. responsiveness
+  }
+  &__menu {
+    position: absolute;
+    top: -500%;
+    z-index: 998;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px;
+    background-color: neutral("white");
+  }
+  &__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    transition: background-color 0.32s ease-in-out, color 0.32s ease-in-out;
+    &:hover {
+      background-color: brand();
+      color: neutral("white");
+    }
+  }
+}

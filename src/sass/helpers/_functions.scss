@@ -1,0 +1,52 @@
+/* GENERAL FUNCTIONS */
+
+// Changes px to rem or em
+@function px-to-rem($px) {
+  @return $px / 16;
+}
+
+/* COLORS MANAGEMENT */
+
+// Returning the selected color from the selected family
+@function color($family: $brand-colors, $key: "red") {
+  @return map-get($family, $key);
+}
+
+// Returning the brand-color from map
+@function brand($key: "red") {
+  @return map-get($brand-colors, $key);
+}
+
+// Returning the neural-color from map
+@function neutral($key: "black") {
+  @return map-get($neutral-colors, $key);
+}
+
+// Returning the semantic-color from map
+@function semantic($key: "success") {
+  @return map-get($semantic-colors, $key);
+}
+
+/* FONT MANAGEMENT */
+
+// Font size calculation
+@function font-size($key: "md") {
+  @if type-of($key) == string {
+    @return map-get($font-sizes, $key);
+  } @else if(type-of($key) == number) {
+    @return px-to-rem($key);
+  } @else {
+    @return null;
+  }
+}
+
+// Font weight calculation
+@function font-weight($key: "regular") {
+  @if type-of($key) == string {
+    @return map-get($font-weights, $key);
+  } @else if(type-of($key) == number and ($key % 100) == 0) {
+    @return $key;
+  } @else {
+    @return null;
+  }
+}

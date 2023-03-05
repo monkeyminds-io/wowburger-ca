@@ -1,0 +1,37 @@
+{
+  "name": "wowburger-ca",
+  "version": "1.0.0",
+  "description": "Web Design & cleitn Scripting CA Project 1. A recreation of the WOWBurger website.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MinimalDesigns/wowburger-ca.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "HTML",
+    "SASS"
+  ],
+  "author": "Pau Ferrer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MinimalDesigns/wowburger-ca/issues"
+  },
+  "homepage": "https://github.com/MinimalDesigns/wowburger-ca#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.1",
+    "mini-css-extract-plugin": "^1.4.0",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}

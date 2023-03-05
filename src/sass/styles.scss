@@ -1,0 +1,23 @@
+/* Styles main file */
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"); // font-family: 'Bebas Neue', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"); // font-family: 'Poppins', sans-serif;
+
+// Helpers
+@import "./helpers/variables";
+@import "./helpers/mixins";
+@import "./helpers/functions";
+
+// Globals
+@import "./globals/resets";
+@import "./globals/commons";
+@import "./globals/sections";
+@import "./globals/containers";
+
+// Libs
+
+// Components
+@import "./components/nav";
+
+// Pages

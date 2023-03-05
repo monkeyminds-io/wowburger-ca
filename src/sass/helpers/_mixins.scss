@@ -1,0 +1,7 @@
+/* RESPONSIVENESS */
+
+@mixin responsive($breakpoint) {
+  @media only screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}

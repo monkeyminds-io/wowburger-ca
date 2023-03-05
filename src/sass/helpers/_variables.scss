@@ -1,0 +1,62 @@
+/* BREAKPOINTS */
+$breakpoints: (
+  2xs: 320px,
+  xs: 568px,
+  sm: 768px,
+  md: 1280px,
+);
+
+/* COLORS */
+$brand-colors: (
+  "red": #ff0000,
+  "yellow": #ffff00,
+);
+
+$neutral-colors: (
+  "black": #000,
+  "gray-900": #1a1a1a,
+  "gray-700": #4d4d4d,
+  "gray-500": #808080,
+  "gray-300": #b3b3b3,
+  "gray-100": #e6e6e6,
+  "white": #fff,
+);
+
+$semantic-colors: (
+  "success": #7ae3aa,
+  "error": #f03063,
+  "warning": #ffc63b,
+  "info": #4da1f7,
+);
+
+/* FONTS */
+$font-sizes: (
+  "xs": 8px,
+  "sm": 12px,
+  "md": 16px,
+  "lg": 24px,
+  "xl": 40px,
+  "h1-dk": 64px,
+  "h1-tb": 48px,
+  "h2-dk": 32px,
+  "h3-dk": 24px,
+);
+
+$font-weights: (
+  "regular": 300,
+  "bold": 600,
+);
+
+/* SPACERS */
+
+$spacers: (
+  "3xs": 8px,
+  "2xs": 16px,
+  "xs": 24px,
+  "sm": 32px,
+  "md": 40px,
+  "lg": 48px,
+  "xl": 56px,
+  "2xl": 64px,
+  "3xl": 72px,
+);
