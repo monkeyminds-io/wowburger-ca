@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector('[data-component="nav"]'),t=e.querySelector('[data-element="burger"]'),n=e.querySelector('[data-element="menu"]');e.addEventListener("click",(e=>{e.preventDefault(),[t,...t.childNodes].forEach((t=>e.target===t?void n.classList.toggle("opened"):null))}))})();

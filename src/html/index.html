@@ -16,23 +16,43 @@
   </head>
   <body>
     <header>
-      <nav class="section nav">
+      <nav class="section nav" data-component="nav">
         <div class="container nav--container">
-          <div class="nav__burger">
-            <div class="nav__burger--line top"></div>
-            <div class="nav__burger--line middle"></div>
-            <div class="nav__burger--line bottom"></div>
+          <div class="nav__burger" data-element="burger">
+            <div class="nav__burger--line top black"></div>
+            <div class="nav__burger--line middle black"></div>
+            <div class="nav__burger--line bottom black"></div>
           </div>
-          <div class="nav__menu">
-            <a href="#" class="nav__link">Our Menu</a>
-            <a href="#" class="nav__link">Why WOW?</a>
+          <div class="nav__menu" data-element="menu">
+            <a href="#" class="nav__link black">Our Menu</a>
+            <a href="#" class="nav__link black">Why WOW?</a>
           </div>
-          <div class="nav__brand">
+          <a href="#" class="nav__brand">
             <img src="./img/logo.svg" alt="WOWBurger logo" />
+          </a>
+          <div class="nav__cta">
+            <a href="#" class="button button--transparent black">Order now</a>
           </div>
-          <a href="#" class="button button--transparent">Order now</a>
         </div>
       </nav>
     </header>
+    <main>
+      <section class="section section--hero home--hero">
+        <div class="container container--center">
+          <h1 class="margin-top--md-3xs">
+            Give your taset buts a wow experience!
+          </h1>
+          <a
+            href="#"
+            class="button button--primary margin-bottom--md-3xs margin-bottom--dk--md-2xs"
+            >Order now</a
+          >
+          <a href="" class="button button--transparent button--vertical">
+            View our menu
+            <img class="width--sm-lg" src="./img/icons/chevron-down.svg" />
+          </a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

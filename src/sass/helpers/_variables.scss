@@ -30,6 +30,8 @@ $semantic-colors: (
 );
 
 /* FONTS */
+$font-heading: "Bebas Neue", cursive;
+$font-copy: "Poppins", sans-serif;
 $font-sizes: (
   "xs": 8px,
   "sm": 12px,
@@ -48,6 +50,13 @@ $font-weights: (
 );
 
 /* SPACERS */
+$directions: "top", "right", "bottom", "left";
+
+$levels: (
+  "sm": 1,
+  "md": 10,
+  "lg": 100,
+);
 
 $spacers: (
   "3xs": 8px,

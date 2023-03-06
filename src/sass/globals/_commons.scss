@@ -1,16 +1,26 @@
 /* Main modules of the page */
 body {
-  font-family: "Poppins", sans-serif;
+  position: relative;
+  font-family: $font-copy;
   font-size: font-size();
   font-weight: font-weight();
   color: neutral();
 }
 
 header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  // background-color: blue;
 }
 
 main {
+  overflow: hidden;
 }
 
 footer {
+}
+
+img {
+  width: 100%;
 }

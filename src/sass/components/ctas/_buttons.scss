@@ -1,0 +1,75 @@
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 32px;
+  width: 100%;
+  font-family: $font-heading;
+  font-size: font-size("h2-dk");
+  line-height: 100%;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: neutral("black");
+  background-color: neutral("white");
+  border: solid 4px neutral("black");
+  transition: all 0.32s ease-in-out;
+
+  &--primary {
+    color: neutral("white");
+    background-color: brand("red");
+    border: solid 4px brand("yellow");
+    &:hover {
+      color: brand("red");
+      background-color: brand("yellow");
+      border: solid 4px brand("red");
+    }
+  }
+
+  &--secondary {
+    color: brand("red");
+    background-color: brand("yellow");
+    border: solid 4px brand("red");
+    &:hover {
+      color: neutral("white");
+      background-color: brand("red");
+      border: solid 4px brand("yellow");
+    }
+  }
+
+  &--transparent {
+    color: neutral("white");
+    background: none;
+    border: none;
+    &:hover {
+      color: neutral("black");
+    }
+    &.black {
+      color: neutral("black");
+      background: none;
+      border: none;
+      &:hover {
+        color: neutral("white");
+      }
+    }
+  }
+
+  &--vertical {
+    flex-direction: column;
+  }
+
+  /* RESPONSIVENESS */
+  // Landscape
+  @include responsive(xs) {
+  }
+
+  // Tablet
+  @include responsive(sm) {
+    width: 240px;
+  }
+
+  // Desktop
+  @include responsive(md) {
+  }
+}

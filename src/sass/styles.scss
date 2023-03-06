@@ -12,12 +12,15 @@
 // Globals
 @import "./globals/resets";
 @import "./globals/commons";
-@import "./globals/sections";
-@import "./globals/containers";
+@import "./globals/spacers";
 
 // Libs
 
 // Components
-@import "./components/nav";
+@import "./components/layout/sections";
+@import "./components/layout/containers";
+@import "./components/navigation/nav";
+@import "./components/ctas/buttons";
 
 // Pages
+@import "./pages/home";
