@@ -1,5 +1,8 @@
 .home {
   &--hero {
-    background-image: url("./img/png/hero-background.png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1280px 687px;
+    background-blend-mode: overlay;
   }
 }

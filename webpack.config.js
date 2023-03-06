@@ -34,7 +34,8 @@ const paths = {
 module.exports = {
   mode: "production",
   entry: {
-    scripts: [paths.src.js + "/scripts.js", paths.src.sass + "/styles.scss"],
+    navbar: [paths.src.js + "/navbar.js", paths.src.sass + "/styles.scss"],
+    homePage: paths.src.js + "/homePage.js",
   },
   output: {
     filename: paths.dist.js + "/[name].js",
@@ -45,6 +46,10 @@ module.exports = {
       {
         test: /\.(sass|scss)$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+        type: "asset/resource",
       },
     ],
   },

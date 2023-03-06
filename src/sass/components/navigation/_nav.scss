@@ -1,6 +1,7 @@
 .nav {
   padding: 16px 0px;
   z-index: 999;
+  transition: background-color 0.32s ease-in-out, box-shadow 0.32s ease-in-out;
   &--container {
     display: flex;
     flex-direction: row;
@@ -20,18 +21,31 @@
       height: 4px;
       z-index: 999;
       background-color: neutral("white");
-      transition: all 0.32s ease-in-out;
+      transition: width 0.32s ease-in-out, opacity 0.32s ease-in-out,
+        transform 0.32s ease-in-out;
       &.top {
         top: 0;
         width: 32px;
+        &.opened {
+          width: 40px;
+          transform: translateY(12px) rotateZ(45deg);
+        }
       }
       &.middle {
         top: 12px;
         width: 40px;
+        &.opened {
+          opacity: 0;
+          transform: translateX(-40px);
+        }
       }
       &.bottom {
         bottom: 0;
         width: 24px;
+        &.opened {
+          width: 40px;
+          transform: translateY(-12px) rotateZ(-45deg);
+        }
       }
       &.black {
         background-color: neutral("black");
@@ -53,9 +67,9 @@
     width: 100vw;
     z-index: 99;
     background-color: neutral("white");
-    transition: all 0.32s ease-in-out;
+    transition: top 0.32s ease-in-out;
     &.opened {
-      top: 100%;
+      top: 128%;
     }
   }
   &__link {
@@ -66,8 +80,8 @@
     padding: 12px 24px;
     width: 100%;
     font-size: font-size("lg");
-    color: neutral("white");
-    transition: all 0.32s ease-in-out;
+    color: neutral("black");
+    transition: color 0.32s ease-in-out, background-color 0.32s ease-in-out;
     &.black {
       color: neutral("black");
     }
@@ -85,6 +99,10 @@
     z-index: 999;
   }
 
+  &.scrolling {
+    background-color: neutral("white");
+    box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+  }
   /* RESPONSIVENESS */
   // Landscape
   @include responsive(xs) {
@@ -113,6 +131,7 @@
     &__link {
       width: auto;
       font-size: font-size("md");
+      color: neutral("white");
     }
     &__cta {
       display: flex;

@@ -12,32 +12,33 @@
     <!-- CSS Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- JavaScript -->
-    <script type="text/javascript" src="./js/scripts.js" defer></script>
+    <script type="text/javascript" src="./js/navbar.js" defer></script>
+    <script type="text/javascript" src="./js/homePage.js" defer></script>
   </head>
   <body>
     <header>
       <nav class="section nav" data-component="nav">
         <div class="container nav--container">
           <div class="nav__burger" data-element="burger">
-            <div class="nav__burger--line top black"></div>
-            <div class="nav__burger--line middle black"></div>
-            <div class="nav__burger--line bottom black"></div>
+            <div class="nav__burger--line top"></div>
+            <div class="nav__burger--line middle"></div>
+            <div class="nav__burger--line bottom"></div>
           </div>
           <div class="nav__menu" data-element="menu">
-            <a href="#" class="nav__link black">Our Menu</a>
-            <a href="#" class="nav__link black">Why WOW?</a>
+            <a href="#" class="nav__link">Our Menu</a>
+            <a href="#" class="nav__link">Why WOW?</a>
           </div>
           <a href="#" class="nav__brand">
             <img src="./img/logo.svg" alt="WOWBurger logo" />
           </a>
           <div class="nav__cta">
-            <a href="#" class="button button--transparent black">Order now</a>
+            <a href="#" class="button button--link">Order now</a>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <section class="section section--hero home--hero">
+      <section class="section section--hero home--hero" data-section="hero">
         <div class="container container--center">
           <h1 class="margin-top--md-3xs">
             Give your taset buts a wow experience!
@@ -47,12 +48,17 @@
             class="button button--primary margin-bottom--md-3xs margin-bottom--dk--md-2xs"
             >Order now</a
           >
-          <a href="" class="button button--transparent button--vertical">
+          <a
+            href="#"
+            class="button button--link button--vertical"
+            data-element="cta-scroll"
+          >
             View our menu
             <img class="width--sm-lg" src="./img/icons/chevron-down.svg" />
           </a>
         </div>
       </section>
+      <div style="height: 200vh"></div>
     </main>
   </body>
 </html>

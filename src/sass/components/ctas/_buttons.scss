@@ -14,7 +14,8 @@
   color: neutral("black");
   background-color: neutral("white");
   border: solid 4px neutral("black");
-  transition: all 0.32s ease-in-out;
+  transition: color 0.32s ease-in-out, background-color 0.32s ease-in-out,
+    border 0.32s ease-in-out;
 
   &--primary {
     color: neutral("white");
@@ -38,12 +39,13 @@
     }
   }
 
-  &--transparent {
+  &--link {
+    width: auto;
     color: neutral("white");
     background: none;
     border: none;
     &:hover {
-      color: neutral("black");
+      background-color: brand("red");
     }
     &.black {
       color: neutral("black");
@@ -51,12 +53,22 @@
       border: none;
       &:hover {
         color: neutral("white");
+        background-color: brand("red");
       }
     }
   }
 
   &--vertical {
     flex-direction: column;
+    &:hover {
+      background: none;
+    }
+    img {
+      transition: transform 0.32s ease-in-out;
+      &.hovered {
+        transform: translateY(8px);
+      }
+    }
   }
 
   /* RESPONSIVENESS */
@@ -67,6 +79,9 @@
   // Tablet
   @include responsive(sm) {
     width: 240px;
+    &--link {
+      width: auto;
+    }
   }
 
   // Desktop
