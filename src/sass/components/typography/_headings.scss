@@ -30,9 +30,22 @@ h1 {
 }
 
 h2 {
+  margin-bottom: 48px;
+  width: 100%;
   font-size: font-size("h2-dk");
 }
 
 h3 {
+  margin-bottom: 16px;
   font-size: font-size("h3-dk");
+  text-align: left;
+  &.large {
+    margin-bottom: 16px;
+    font-size: font-size("h2-dk");
+    /* RESPONSIVENESS */
+    // Landscape
+    @include responsive(xs) {
+      margin-bottom: 40px;
+    }
+  }
 }

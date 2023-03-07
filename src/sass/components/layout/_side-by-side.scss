@@ -1,0 +1,56 @@
+.side-by-side {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    a {
+      margin-top: 24px;
+    }
+  }
+  &__image {
+    margin: 0 auto;
+  }
+  /* RESPONSIVENESS */
+
+  // Ladscape
+  @include responsive(xs) {
+    &__image {
+      img {
+        width: 320px;
+      }
+    }
+  }
+
+  // Tablet
+  @include responsive(sm) {
+    gap: 80px;
+    &__image {
+      img {
+        width: 480px;
+      }
+    }
+  }
+
+  // Desktop
+  @include responsive(md) {
+    flex-direction: row;
+    align-items: center;
+    &__content {
+      align-items: flex-start;
+      max-width: 480px;
+      text-align: left;
+      h2 {
+        text-align: left;
+      }
+    }
+    &__image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

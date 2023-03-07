@@ -3,6 +3,12 @@
   width: 100%;
   max-width: 1280px;
 
+  &--center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   /* RESPONSIVENESS */
   // Landscape
   @include responsive(xs) {
@@ -16,12 +22,6 @@
 
   // Desktop
   @include responsive(md) {
-    padding: 0px 128px;
-  }
-
-  &--center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 0px 80px;
   }
 }

@@ -1,0 +1,60 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  background: neutral("white");
+  border: 4px solid brand("red");
+
+  // Best seller cards
+  &--best-seller {
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 128px;
+      overflow: hidden;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding: 12px 24px;
+    }
+
+    /* RESPONSIVENESS */
+
+    // Tablet
+    @include responsive(sm) {
+      &__header {
+        height: 160px;
+      }
+    }
+
+    // Desktop
+    @include responsive(md) {
+      &__header {
+        height: 128px;
+      }
+    }
+  }
+
+  // Menu cards
+  &--menu {
+    gap: 48px;
+    padding: 16px;
+    color: brand("red");
+    background-color: brand("yellow");
+    &__family {
+      text-align: center;
+      width: 100%;
+    }
+    /* RESPONSIVENESS */
+    // Landscape
+    @include responsive(xs) {
+      &__family {
+        text-align: left;
+      }
+    }
+  }
+}

@@ -12,16 +12,28 @@
 // Globals
 @import "./globals/resets";
 @import "./globals/commons";
-@import "./globals/spacers";
 
 // Libs
 
 // Components
+@import "./components/spacers/margins";
+@import "./components/spacers/paddings";
+@import "./components/spacers/widths";
 @import "./components/typography/headings";
+@import "./components/typography/paragraphs";
 @import "./components/layout/sections";
 @import "./components/layout/containers";
+@import "./components/layout/grids";
+@import "./components/layout/flex";
+@import "./components/layout/side-by-side";
 @import "./components/navigation/nav";
+@import "./components/navigation/footer";
 @import "./components/ctas/buttons";
+@import "./components/forms/forms";
+@import "./components/forms/inputs";
+@import "./components/cards";
+@import "./components/banners";
+@import "./components/dividers";
 
 // Pages
 @import "./pages/home";

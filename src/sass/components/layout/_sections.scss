@@ -4,35 +4,24 @@
   align-items: center;
   padding: 64px 0px;
 
-  /* RESPONSIVENESS */
-  // Mobile Landscape
-  @include responsive(xs) {
+  &--hero {
+    padding-top: 80px;
   }
+
+  &--footer {
+    padding: 0 0 16px;
+  }
+
+  /* RESPONSIVENESS */
 
   // Tablet
   @include responsive(sm) {
     padding: 80px 0px;
-  }
-
-  // Desktop
-  @include responsive(md) {
-  }
-
-  &--hero {
-    padding-top: 80px;
-
-    /* RESPONSIVENESS */
-    // Landscape
-    @include responsive(xs) {
-    }
-
-    // Tablet
-    @include responsive(sm) {
+    &--hero {
       padding-top: 160px;
     }
-
-    // Desktop
-    @include responsive(md) {
+    &--footer {
+      padding: 0 0 16px;
     }
   }
 }

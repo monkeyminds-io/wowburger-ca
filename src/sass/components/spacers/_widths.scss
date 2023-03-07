@@ -1,0 +1,13 @@
+@each $level, $multiplier in $levels {
+  @each $name, $spacer in $spacers {
+    .width {
+      &--#{$level}-#{$name} {
+        width: $spacer * $multiplier !important;
+      }
+    }
+  }
+}
+
+.width--full {
+  width: 100% !important;
+}

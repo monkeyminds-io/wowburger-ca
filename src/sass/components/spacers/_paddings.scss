@@ -1,0 +1,31 @@
+@each $direction in $directions {
+  @each $level, $multiplier in $levels {
+    @each $name, $spacer in $spacers {
+      .padding {
+        &-#{$direction}--#{$level}-#{$name} {
+          margin-#{$direction}: $spacer * $multiplier !important;
+        }
+      }
+    }
+  }
+}
+
+@each $level, $multiplier in $levels {
+  @each $name, $spacer in $spacers {
+    .padding {
+      &-all--#{$level}-#{$name} {
+        margin: $spacer * $multiplier !important;
+      }
+      &-extreems--#{$level}-#{$name} {
+        margin: ($spacer * $multiplier) 0 !important;
+      }
+      &-sides--#{$level}-#{$name} {
+        margin: 0 ($spacer * $multiplier) !important;
+      }
+    }
+  }
+}
+
+.padding--none {
+  padding: 0 !important;
+}

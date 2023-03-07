@@ -1,0 +1,50 @@
+.paragraph {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  &--xs {
+    margin-bottom: font-size("xs");
+    font-size: font-size("xs");
+  }
+  &--sm {
+    margin-bottom: font-size("sm");
+    font-size: font-size("sm");
+  }
+  &--md {
+    margin-bottom: font-size("md");
+    font-size: font-size("md");
+  }
+  &--lg {
+    margin-bottom: font-size("lg");
+    font-size: font-size("lg");
+  }
+  &--xl {
+    margin-bottom: font-size("xl");
+    font-size: font-size("xl");
+  }
+}
+
+.text {
+  &--bold {
+    font-weight: font-weight("bold");
+  }
+  &-align {
+    &--left {
+      text-align: left;
+    }
+    &--right {
+      text-align: right;
+    }
+    &--center {
+      text-align: center;
+    }
+  }
+  &--gray {
+    &-500 {
+      color: neutral("gray-500");
+    }
+  }
+  &--all-caps {
+    text-transform: uppercase;
+  }
+}

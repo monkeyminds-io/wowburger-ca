@@ -1,0 +1,31 @@
+.grid {
+  display: grid;
+  width: 100%;
+  &--2-columns {
+    grid-template-columns: 1fr;
+    gap: 32px;
+
+    /* RESPONSIVENESS */
+
+    // Desktop
+    @include responsive(md) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  &--3-columns {
+    grid-template-columns: 1fr;
+    gap: 32px;
+
+    /* RESPONSIVENESS */
+
+    // Tablet
+    @include responsive(sm) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    // Desktop
+    @include responsive(md) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
