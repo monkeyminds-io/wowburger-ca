@@ -1,31 +1,44 @@
 .grid {
   display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
   width: 100%;
-  &--2-columns {
-    grid-template-columns: 1fr;
-    gap: 32px;
 
-    /* RESPONSIVENESS */
+  &--4-columns {
+    gap: 16px;
+  }
 
-    // Desktop
-    @include responsive(md) {
+  /* RESPONSIVENESS */
+
+  // Landscape
+  @include responsive(xs) {
+    &--4-columns {
       grid-template-columns: 1fr 1fr;
     }
   }
-  &--3-columns {
-    grid-template-columns: 1fr;
-    gap: 32px;
 
-    /* RESPONSIVENESS */
-
-    // Tablet
-    @include responsive(sm) {
+  // Tablet
+  @include responsive(sm) {
+    &--3-columns {
       grid-template-columns: 1fr 1fr;
     }
-
-    // Desktop
-    @include responsive(md) {
+    &--4-columns {
+      gap: 24px;
       grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  // Desktop
+  @include responsive(md) {
+    &--2-columns {
+      grid-template-columns: 1fr 1fr;
+    }
+    &--3-columns {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    &--4-columns {
+      gap: 32px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
 }

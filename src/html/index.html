@@ -8,12 +8,13 @@
       name="description"
       content="WOWBurgers | Give your taste buts a WOW experience!! Order a WOWBurger now!! The best burgers in Ireland."
     />
-    <title>WOWBurgers | hoome page</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <title>WOWBurgers | Home</title>
     <!-- CSS Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- JavaScript -->
     <script type="text/javascript" src="./js/navbar.js" defer></script>
-    <script type="text/javascript" src="./js/homePage.js" defer></script>
+    <script type="text/javascript" src="./js/home-page.js" defer></script>
   </head>
   <body>
     <header>
@@ -26,30 +27,34 @@
           </div>
           <div class="nav__menu" data-element="menu">
             <a href="./best-sellers.html" class="nav__link">Best Sellers</a>
-            <a href="#" class="nav__link">Why WOW?</a>
+            <a href="./index.html#why-wow" class="nav__link">Why WOW?</a>
           </div>
           <a href="./index.html" class="nav__brand">
             <img src="./img/logo.svg" alt="WOWBurger logo" />
           </a>
           <div class="nav__cta">
-            <a href="#" class="button button--link">Order now</a>
+            <a href="./order-now.html" class="button button--link">Order now</a>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <section class="section section--hero home--hero" data-section="hero">
+      <section
+        class="section section--hero"
+        data-page="home"
+        data-section="hero"
+      >
         <div class="container container--center">
           <h1 class="margin-top--md-3xs">
             Give your taset buts a wow experience!
           </h1>
           <a
-            href="#"
+            href="./order-now.html"
             class="button button--primary margin-bottom--md-3xs margin-bottom--dk--md-2xs"
             >Order now</a
           >
           <a
-            href="#"
+            href=""
             class="button button--link button--vertical"
             data-element="cta-scroll"
           >
@@ -62,10 +67,14 @@
         <div class="container">
           <h2>Our best sellers</h2>
           <div class="grid grid--3-columns">
-            <div class="card card--best-seller">
+            <a
+              href="./order-now.html"
+              class="card card--best-seller"
+              data-burger="WOW-hamburger"
+            >
               <div class="card--best-seller__header">
                 <img
-                  src="./img/png/WOW-hamburger.png"
+                  src="./img/webp/WOW-hamburger.webp"
                   alt="WOW Hamburger image"
                 />
               </div>
@@ -83,11 +92,15 @@
                   €6.45
                 </p>
               </div>
-            </div>
-            <div class="card card--best-seller">
+            </a>
+            <a
+              href="./order-now.html"
+              class="card card--best-seller"
+              data-burger="WOW-cheeseburger"
+            >
               <div class="card--best-seller__header">
                 <img
-                  src="./img/png/WOW-cheeseburger.png"
+                  src="./img/webp/WOW-cheeseburger.webp"
                   alt="WOW Cheeseburger image"
                 />
               </div>
@@ -106,11 +119,15 @@
                   €7.45
                 </p>
               </div>
-            </div>
-            <div class="card card--best-seller">
+            </a>
+            <a
+              href="./order-now.html"
+              class="card card--best-seller"
+              data-burger="WOW-bacon-cheeseburger"
+            >
               <div class="card--best-seller__header">
                 <img
-                  src="./img/png/WOW-bacon-cheeseburger.png"
+                  src="./img/webp/WOW-bacon-cheeseburger.webp"
                   alt="WOW Bacon Cheeseburger image"
                 />
               </div>
@@ -129,11 +146,11 @@
                   €8.45
                 </p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="our-menu">
         <div class="container container--center" id="section-our-menu">
           <h2>Our menu</h2>
           <div class="grid grid--2-columns margin-bottom--sm-lg">
@@ -228,10 +245,12 @@
               </div>
             </div>
           </div>
-          <a href="#" class="button button--primary">Order now</a>
+          <a href="./order-now.html" class="button button--primary"
+            >Order now</a
+          >
         </div>
       </section>
-      <section class="section">
+      <section class="section" id="why-wow">
         <div class="container side-by-side">
           <div class="side-by-side__content">
             <h2>Why WOW?</h2>
@@ -248,10 +267,12 @@
               the best of seasonal potatoes from Maris Pipers to Marquis
               Potatoes – depending on the season.
             </p>
-            <a href="#" class="button button--primary">Order Now</a>
+            <a href="./order-now.html" class="button button--primary"
+              >Order Now</a
+            >
           </div>
           <div class="side-by-side__image">
-            <img src="./img/png/why-wow.png" alt="Our WOW Hamburger!!" />
+            <img src="./img/webp/why-wow.webp" alt="Our WOW Hamburger!!" />
           </div>
         </div>
       </section>
@@ -272,6 +293,7 @@
                 Join our mailing list and we’ll give you the first scoop on the
                 latest & greatest WOWBURGER happenings!
               </p>
+              <!-- TODO Create action of the form (maybe just a modal popup with success message...?) -->
               <form action="" class="form form--email-list">
                 <input
                   class="input"
@@ -300,15 +322,17 @@
           </a>
           <div class="footer__menu">
             <a href="best-sellers.html" class="nav__link black">Best Sellers</a>
-            <a href="#" class="nav__link black">Why WOW?</a>
-            <a href="#" class="nav__link black">Contact us</a>
+            <a href="./index.html#why-wow" class="nav__link black">Why WOW?</a>
+            <a href="./contact-us.html" class="nav__link black">Contact us</a>
             <div class="footer__sm-block">
               <img src="./img/icons/facebook.svg" alt="Facebook icon" />
               <img src="./img/icons/instagram.svg" alt="Instagram icon" />
             </div>
           </div>
           <div class="footer__cta-block">
-            <a href="#" class="button button--primary">Order now</a>
+            <a href="./order-now.html" class="button button--primary"
+              >Order now</a
+            >
           </div>
         </div>
         <div class="footer__copywrite-block">

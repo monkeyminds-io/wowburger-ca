@@ -8,6 +8,8 @@
 
   // Best seller cards
   &--best-seller {
+    transition: box-shadow 0.32s ease-in-out, transform 0.32s ease-in-out;
+
     &__header {
       display: flex;
       align-items: center;
@@ -26,6 +28,12 @@
 
     // Tablet
     @include responsive(sm) {
+      &:hover {
+        z-index: 1;
+        box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+        transform: translateY(-16px);
+      }
+
       &__header {
         height: 160px;
       }
@@ -45,16 +53,68 @@
     padding: 16px;
     color: brand("red");
     background-color: brand("yellow");
+
     &__family {
       text-align: center;
       width: 100%;
     }
+
     /* RESPONSIVENESS */
     // Landscape
     @include responsive(xs) {
       &__family {
         text-align: left;
       }
+    }
+  }
+
+  // Menu item cards
+  &--menu-item {
+    height: 100%;
+    cursor: pointer;
+    transition: box-shadow 0.32s ease-in-out, transform 0.32s ease-in-out;
+
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      height: 96px;
+
+      img {
+        width: 120%;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding: 8px;
+      width: 100%;
+      text-align: center;
+
+      :first-child {
+        flex-grow: 1;
+      }
+    }
+
+    // TODO Responsiveness
+    /* RESPONSIVENESS */
+    // Landscape
+    @include responsive(xs) {
+    }
+
+    // Tablet
+    @include responsive(sm) {
+      &:hover {
+        box-shadow: 0px 24px 48px -12px rgba(16, 24, 40, 0.18);
+        transform: translateY(-16px);
+      }
+    }
+
+    // Desktop
+    @include responsive(md) {
     }
   }
 }

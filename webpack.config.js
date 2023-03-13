@@ -35,7 +35,11 @@ module.exports = {
   mode: "production",
   entry: {
     navbar: [paths.src.js + "/navbar.js", paths.src.sass + "/styles.scss"],
-    homePage: paths.src.js + "/homePage.js",
+    "home-page": paths.src.js + "/home-page.js",
+    "best-sellers": paths.src.js + "/best-sellers.js",
+    "order-now": paths.src.js + "/order-now.js",
+    "contact-us": paths.src.js + "/contact-us.js",
+    "hero-images": paths.src.js + "/hero-images.js",
   },
   output: {
     filename: paths.dist.js + "/[name].js",

@@ -24,7 +24,7 @@ const openNavMenu = function () {
 // EVENTS ////////////////
 
 // Click event to trigger the open menu animation
-nav.addEventListener("click", (e) => {
+burger.addEventListener("click", (e) => {
   e.preventDefault();
   [burger, ...burger.children].forEach((clickable) =>
     e.target === clickable ? openNavMenu() : null

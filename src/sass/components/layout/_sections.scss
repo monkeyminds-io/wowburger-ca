@@ -6,6 +6,12 @@
 
   &--hero {
     padding-top: 80px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    &[data-page="home"] {
+      background-blend-mode: overlay;
+    }
   }
 
   &--footer {

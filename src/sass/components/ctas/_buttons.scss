@@ -18,6 +18,10 @@
   transition: color 0.32s ease-in-out, background-color 0.32s ease-in-out,
     border 0.32s ease-in-out;
 
+  svg {
+    width: 32px;
+  }
+
   &--primary {
     color: neutral("white");
     background-color: brand("red");

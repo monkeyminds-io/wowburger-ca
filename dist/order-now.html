@@ -4,12 +4,713 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WOWBurger | Order Now!</title>
+    <meta
+      name="description"
+      content="WOWBurgers | Give your taste buts a WOW experience!! Order a WOWBurger now!! The best burgers in Ireland."
+    />
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <title>WOWBurgers | hoome page</title>
+    <!-- CSS Styles -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <script type="text/javascript" src="./js/scripts.js" defer></script>
+    <!-- JavaScript -->
+    <script type="text/javascript" src="./js/navbar.js" defer></script>
+    <script type="text/javascript" src="./js/hero-images.js" defer></script>
+    <script type="text/javascript" src="./js/order-now.js" defer></script>
   </head>
   <body>
-    <h1>Order Now</h1>
-    <a href="./index.html">Go to order now!!</a>
+    <!-- HEADER -->
+    <header>
+      <!-- NAVBAR -->
+      <nav class="section nav" data-component="nav">
+        <div class="container nav--container">
+          <!-- BURGER -->
+          <div class="nav__burger" data-element="burger">
+            <div class="nav__burger--line top"></div>
+            <div class="nav__burger--line middle"></div>
+            <div class="nav__burger--line bottom"></div>
+          </div>
+
+          <!-- MENU -->
+          <div class="nav__menu" data-element="menu">
+            <a href="./best-sellers.html" class="nav__link">Best Sellers</a>
+            <a href="./index.html#why-wow" class="nav__link">Why WOW?</a>
+          </div>
+
+          <!-- BRAND LOGO -->
+          <a href="./index.html" class="nav__brand">
+            <img src="./img/logo.svg" alt="WOWBurger logo" />
+          </a>
+
+          <!-- NAV-CTA -->
+          <div class="nav__cta">
+            <a href="./order-now.html" class="button button--link">Order now</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO SECTION | data-section is to capture this specific section and render background using JavaScript -->
+      <section class="section section--hero" data-section="hero">
+        <!-- CONTAINER -->
+        <div class="container container--center">
+          <!-- SECTION HEADING -->
+          <h1 class="text--white">Order now</h1>
+
+          <!-- FORM ORDER NOW -->
+          <form
+            action=""
+            class="form form--order-now"
+            data-component="order-now-form"
+          >
+            <!-- SLIDER WRAPPER FOR MULTISTEP UX -->
+            <div class="slider" data-component="slider">
+              <!-- SLIDE FOR STEP #1 : BURGERS -->
+              <div
+                class="slider__item first"
+                data-element="slide"
+                data-form-step="1"
+              >
+                <h2>Choose your burgersss...</h2>
+
+                <!-- CARDS GRID -->
+                <div class="grid grid--4-columns">
+                  <div>
+                    <!-- CARD -->
+                    <label for="WOW-hamburger" class="card card--menu-item">
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/WOW-hamburger.webp"
+                          alt="WOW Hamburger image"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          WOW Hamburger
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €6.45
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="WOW-hamburger"
+                      id="WOW-hamburger"
+                      value="WOW-hamburger, lg, 1, 6.45"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <!-- CARD -->
+                    <label for="WOW-cheeseburger" class="card card--menu-item">
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/WOW-cheeseburger.webp"
+                          alt="WOW Cheeseburger image"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          WOW Cheeseburger
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €7.45
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="WOW-cheeseburger"
+                      id="WOW-cheeseburger"
+                      value="WOW-cheeseburger, lg, 1, 7.45"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <!-- CARD -->
+                    <label
+                      for="WOW-bacon-cheeseburger"
+                      class="card card--menu-item"
+                    >
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/WOW-bacon-cheeseburger.webp"
+                          alt="WOW Bacon Cheeseburger"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          WOW Bacon Cheeseburger
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €8.45
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="WOW-bacon-cheeseburger"
+                      id="WOW-bacon-cheeseburger"
+                      value="WOW-bacon-cheeseburger, lg, 1, 8.45"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <!-- CARD -->
+                    <label for="WOW-veggie-burger" class="card card--menu-item">
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/WOW-veggie-burger.webp"
+                          alt="WOW Veggie Burger image"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          WOW Veggie Burger
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €7.95
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="WOW-veggie-burger"
+                      id="WOW-veggie-burger"
+                      value="WOW-veggie-burger, lg, 1, 7.95"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <!-- CARD -->
+                    <label for="WOW-vegan-burger" class="card card--menu-item">
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/WOW-vegan-burger.webp"
+                          alt="WOW Vegan Burger image"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          WOW Vegan Burger
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €7.95
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="WOW-vegan-burger"
+                      id="WOW-vegan-burger"
+                      value="WOW-vegan-burger, lg, 1, 7.95"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <!-- CARD -->
+                    <label for="mini-hamburger" class="card card--menu-item">
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/mini-hamburger.webp"
+                          alt="MINI Hamburger image"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          MINI Hamburger
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €5.95
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="mini-hamburger"
+                      id="mini-hamburger"
+                      value="mini-hamburger, lg, 1, 5.95"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <!-- CARD -->
+                    <label for="mini-cheeseburger" class="card card--menu-item">
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/mini-cheeseburger.webp"
+                          alt="MINI Cheeseburger image"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          WOW Cheeseburger
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €6.45
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="mini-cheeseburger"
+                      id="mini-cheeseburger"
+                      value="mini-cheeseburger, lg, 1, 6.45"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <!-- CARD -->
+                    <label
+                      for="mini-bacon-cheeseburger"
+                      class="card card--menu-item"
+                    >
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/mini-bacon-cheeseburger.webp"
+                          alt="MINI Bacon Cheeseburger image"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          MINI Bacon Cheeseburger
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €6.95
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="mini-bacon-cheeseburger"
+                      id="mini-bacon-cheeseburger"
+                      value="mini-bacon-cheeseburger, lg, 1, 6.95"
+                      class="hidden"
+                    />
+                  </div>
+                </div>
+
+                <!-- NEXT BUTTON | With JavaScript will make the form to slide to the next step -->
+                <a
+                  href="#"
+                  class="button button--primary border--red margin-top--sm-sm"
+                  >Next
+                  <svg
+                    width="33"
+                    height="32"
+                    viewBox="0 0 33 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.67188 16H24.3385M17.6719 6.66663L27.0052 16L17.6719 25.3333"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </a>
+              </div>
+
+              <!-- SLIDE FOR STEP #2 : DRINKS -->
+              <div class="slider__item" data-element="slide" data-form-step="2">
+                <h2>Choose your drinksss...</h2>
+
+                <!-- CARDS GRID -->
+                <div class="grid grid--4-columns">
+                  <div>
+                    <!-- CARD -->
+                    <label for="original-coke" class="card card--menu-item">
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/original-coke.webp"
+                          alt="Original Coke image"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          Original Coke
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €3.20
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="original-coke"
+                      id="original-coke"
+                      value="original-coke, regular, 1, 3.20"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <!-- CARD -->
+                    <label for="diete-coke" class="card card--menu-item">
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/diete-coke.webp"
+                          alt="Diete Coke image"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          Diete Coke
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €3.20
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="diete-coke"
+                      id="diete-coke"
+                      value="diete-coke, regular, 1, 3.20"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <!-- CARD -->
+                    <label for="coke-zero" class="card card--menu-item">
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/coke-zero.webp"
+                          alt="Coke Zero image"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          Coke Zero
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €3.20
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="coke-zero"
+                      id="coke-zero"
+                      value="coke-zero, regular, 1, 3.20"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <!-- CARD -->
+                    <label for="fanta-orange" class="card card--menu-item">
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/fanta-orange.webp"
+                          alt="Fanta Orange"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          Fanta Orange
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €3.20
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="fanta-orange"
+                      id="fanta-orange"
+                      value="fanta-orange, regular, 1, 3.20"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <!-- CARD -->
+                    <label for="natural-water" class="card card--menu-item">
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/natural-water.webp"
+                          alt="Natural Water"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          Natural Water
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €3.20
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="natural-water"
+                      id="natural-water"
+                      value="natural-water, regular, 1, 3.20"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <!-- CARD -->
+                    <label for="sparkling-water" class="card card--menu-item">
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/sparkling-water.webp"
+                          alt="Sparkling Water"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          Sparkling Water
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €3.20
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="sparkling-water"
+                      id="sparkling-water"
+                      value="sparkling-water, regular, 1, 3.20"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <!-- CARD -->
+                    <label for="thick-shakes" class="card card--menu-item">
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/thick-shakes.webp"
+                          alt="Thick Shakes image"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          Thick Shakes
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €5.45
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="thick-shakes"
+                      id="thick-shakes"
+                      value="thick-shakes, strawberry, 1, 3.20"
+                      class="hidden"
+                    />
+                  </div>
+                  <div>
+                    <!-- CARD -->
+                    <label for="sundaes" class="card card--menu-item">
+                      <div class="card--menu-item__header">
+                        <img
+                          src="./img/webp/sundaes.webp"
+                          alt="Sundaes image"
+                        />
+                      </div>
+                      <div class="card--menu-item__content">
+                        <p class="paragraph paragraph--md text--all-caps">
+                          Sundaes
+                        </p>
+                        <p
+                          class="paragraph paragraph--lg text--bold margin--none"
+                        >
+                          €5.45
+                        </p>
+                      </div>
+                    </label>
+                    <!-- CHECKBOX -->
+                    <input
+                      type="checkbox"
+                      name="sundaes"
+                      id="sundaes"
+                      value="sundaes, strawberry, 1, 3.20"
+                      class="hidden"
+                    />
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="button button--primary border--red margin-top--sm-sm"
+                  >Next
+                  <svg
+                    width="33"
+                    height="32"
+                    viewBox="0 0 33 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.67188 16H24.3385M17.6719 6.66663L27.0052 16L17.6719 25.3333"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- SLIDE FOR STEP #1 : BURGERS -->
+              <div class="slider__item" data-element="slide" data-form-step="1">
+                <h2>Customize your order!</h2>
+
+                <!-- ORDER PREVIEW -->
+                <div class="card card--order-item">
+                  <div class="card--order-item__content">
+                    <img
+                      src="./img/webp/mini-bacon-cheeseburger.webp"
+                      class="item__image"
+                    />
+                    <div class="flex--vertical align--start">
+                      <p class="paragraph--md text--al-caps">
+                        MINI Bacon Cheeseburger
+                      </p>
+                      <div class="input input--select select--small">
+                        <select name="size" id="size" class="hidden">
+                          <option value="lg">LG</option>
+                          <option value="xl">XL</option>
+                          <option value="XXL">XXL</option>
+                        </select>
+                        <div class="input--select__selector">
+                          <span>LG</span>
+                          <div class="selector__icon">
+                            <svg
+                              width="48"
+                              height="48"
+                              viewBox="0 0 48 48"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M12 18L24 30L36 18"
+                                stroke="#FFFFFF"
+                                stroke-width="4"
+                                stroke-linecap="square"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="input--select__options-list">
+                          <span>LG</span>
+                          <span>XL</span>
+                          <span>XXL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card--order-item__footer">
+                    <a href="#" class="input--number__minus"></a>
+                    <input type="number" class="input--number__body" />
+                    <a href="#" class="input--number__plus"></a>
+                  </div>
+                </div>
+
+                <!-- DISCOUNT CODE INPUT -->
+
+                <!-- NEXT BUTTON | With JavaScript will make the form to slide to the next step -->
+                <a
+                  href="#"
+                  class="button button--primary border--red margin-top--sm-sm"
+                  >Next
+                  <svg
+                    width="33"
+                    height="32"
+                    viewBox="0 0 33 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.67188 16H24.3385M17.6719 6.66663L27.0052 16L17.6719 25.3333"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="section section--footer">
+      <div class="container">
+        <div class="divider divider--horizontal margin-bottom--sm-md"></div>
+        <div class="footer__nav">
+          <a href="./index.html" class="footer__brand">
+            <img src="./img/logo.svg" alt="WOWBurgers logo" />
+          </a>
+          <div class="footer__menu">
+            <a href="best-sellers.html" class="nav__link black">Best Sellers</a>
+            <a href="./index.html#why-wow" class="nav__link black">Why WOW?</a>
+            <a href="./contact-us.html" class="nav__link black">Contact us</a>
+            <div class="footer__sm-block">
+              <img src="./img/icons/facebook.svg" alt="Facebook icon" />
+              <img src="./img/icons/instagram.svg" alt="Instagram icon" />
+            </div>
+          </div>
+          <div class="footer__cta-block">
+            <a href="./order-now.html" class="button button--primary"
+              >Order now</a
+            >
+          </div>
+        </div>
+        <div class="footer__copywrite-block">
+          <p class="paragraph--xs">
+            © Copyright 2023 WOWBurgers all rights reserved
+          </p>
+          <p class="paragraph--xs">
+            Website designed and developed by Minimal Designs
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,9 @@
+.link {
+  color: brand("red");
+  text-decoration: underline;
+  transition: color 0.32s ease-in-out;
+
+  &:hover {
+    color: neutral("black");
+  }
+}

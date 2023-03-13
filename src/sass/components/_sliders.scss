@@ -1,0 +1,21 @@
+.slider {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    transition: transform 0.32s ease-in-out, opacity 0.32s ease-in-out;
+
+    div {
+      flex-grow: 1;
+    }
+
+    a {
+      width: 100% !important;
+    }
+  }
+}

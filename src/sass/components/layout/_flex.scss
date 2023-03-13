@@ -24,6 +24,7 @@
       }
     }
   }
+
   &--vertical {
     flex-direction: column;
     /* RESPONSIVENESS */
@@ -53,8 +54,17 @@
   }
 
   &.align {
+    &--start {
+      align-items: flex-start;
+    }
     &--center {
       align-items: center;
+    }
+    &--end {
+      align-items: flex-end;
+    }
+    &--stretch {
+      align-items: stretch;
     }
   }
 

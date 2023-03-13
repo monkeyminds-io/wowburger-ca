@@ -2,6 +2,7 @@
   padding: 16px 0px;
   z-index: 999;
   transition: background-color 0.32s ease-in-out, box-shadow 0.32s ease-in-out;
+
   &--container {
     display: flex;
     flex-direction: row;
@@ -9,12 +10,14 @@
     align-items: center;
     position: relative;
   }
+
   &__burger {
     position: relative;
     width: 40px;
     height: 28px;
     z-index: 999;
     cursor: pointer;
+
     &--line {
       position: absolute;
       left: 0;
@@ -23,6 +26,7 @@
       background-color: neutral("white");
       transition: width 0.32s ease-in-out, opacity 0.32s ease-in-out,
         transform 0.32s ease-in-out;
+
       &.top {
         top: 0;
         width: 32px;
@@ -31,6 +35,7 @@
           transform: translateY(12px) rotateZ(45deg);
         }
       }
+
       &.middle {
         top: 12px;
         width: 40px;
@@ -39,6 +44,7 @@
           transform: translateX(-40px);
         }
       }
+
       &.bottom {
         bottom: 0;
         width: 24px;
